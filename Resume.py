@@ -13,6 +13,7 @@ hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
+header {visibility: hidden;}
 css-1y0tads {padding-top: 0rem;}
 </style>
 
