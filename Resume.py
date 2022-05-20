@@ -1,5 +1,3 @@
-from ctypes import alignment
-from faulthandler import disable
 import time
 import streamlit as st
 import streamlit.components.v1 as components
@@ -25,7 +23,7 @@ with st.sidebar:
         # Profile image
         _, col2, _ = st.columns([1, 4, 1])
 
-        col2.image('.\img\Profile.png', use_column_width=True)
+        col2.image('Profile.png', use_column_width=True)
         
         # Name
         _ , _, col2, _ , _= st.columns([1, 1, 20, 1, 1])
@@ -50,35 +48,7 @@ with st.sidebar:
         st.text("")
         
 
-        # # Data
-        # # Email Details
-        # _, col2, col3 = st.columns([0.1, 1, 7])
-
-        # col2.image('.\img\email.png', width = 20)
-        # with col3:
-        #         st.text("rdscode.py2gmail.com")
-        
-        # #Linkedin
-        # _, col2, col3 = st.columns([0.1, 1, 7])
-
-        # col2.image('.\img\linkedin.png', width = 20)
-        # with col3:
-        #         st.markdown("""[Radheshyam vaishnav](https://www.linkedin.com/in/radheshyam-vaishnav/)""")
-        
-        # # Github Details
-        # _, col2, col3 = st.columns([0.1, 1, 7])
-
-        # col2.image('.\img\github.png', width = 20)
-        # with col3:
-        #         st.markdown("""[Radheshyamvaishnav](https://github.com/Radheshyamvaishnav)
-        #         <style>
-        #         a, a:hover, a:focus, a:active {
-	#                 text-decoration: none; 
-        #         }
-        #         </style>
-        #         """, unsafe_allow_html= True)
-        #         #st.markdown("[![Foo](https://img.icons8.com/material-outlined/24/000000/github.png)](emailto:rdscode.py@gmail.com)")
-
+        # Links
         col ,col1, col2, col3, _ = st.columns([1, 1, 3, 1, 1])
         col2.caption('Wish to connect?')
 
@@ -90,7 +60,7 @@ with st.sidebar:
 
         st.text("")
 
-
+        # Resume Button
         col ,col1, col2, col3, _ = st.columns([1, 2, 8, 2, 1])
         pdfFileObj = open('pdf/resume.pdf', 'rb')
         col2.download_button('Download Resume',pdfFileObj,file_name='Radheshyam Vaishnav\'s Resume.pdf',mime='pdf')
