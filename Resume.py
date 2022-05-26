@@ -8,18 +8,16 @@ import io
 
 st.set_page_config(page_title='Mr. Vaishnav\'s portfolio' ,layout="wide",page_icon='👨‍🔬')
 
-#hide menu hamburger icon , Reduce padding & remove footer
+#hide menu hamburger icon , Reduce padding & remove footer & header
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
-css-1y0tads {padding-top: 0rem;}
 </style>
 
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 with st.sidebar:
         # Profile image
         _, col2, _ = st.columns([1, 4, 1])
@@ -82,7 +80,7 @@ ideas to non-technical stakeholders. I am able to jump across verticals to deliv
 _While working as a Trainee Automation Engineer at Wipro, I increased the delivery rate of a project by 20%, 
 for which I received a 150% bonus on top of my salary._
 
-_During my graduate studies, I found it difficult to study whole books and revise them before exams, 
+_During my graduate studies, I found it difficult to study whole pdf books and revise them before exams, 
 therefore as a final year project, I designed an ML project called Automatic Text Summarization to overcome this 
 problem. It is a tool that summaries paragraphs to help students revise more quickly and effectively before exams._''')
 
