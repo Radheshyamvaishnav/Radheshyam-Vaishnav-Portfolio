@@ -3,3 +3,4 @@ filelock==3.6.0
 platformdirs==2.5.2
 six==1.16.0
 virtualenv==20.14.1
+protobuf~=3.19.0
