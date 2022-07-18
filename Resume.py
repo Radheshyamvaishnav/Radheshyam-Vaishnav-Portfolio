@@ -121,6 +121,7 @@ st.text("")
 st.markdown("**● Introduction to Quantum Computing**")
 st.text('''
 -> The Coding School, Los Angeles                                                2020 - 2021
+-> Certificate
         ''')
 
 
