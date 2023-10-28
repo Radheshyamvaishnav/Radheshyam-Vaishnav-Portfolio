@@ -149,6 +149,19 @@ st.text("")
 
 st.subheader("Work Experiance")
 
+
+st.text("")
+st.code(''' 
+● Pipeline Developer
+| Zebu Animation Studio  
+| Full-time
+| Sep 2022 
+| Bengaluru, Karnataka, India
+
+• As a Junior Pipeline Developer, I am committed to delivering exceptional results, having already saved significant time and resources for our company by crafting essential tools and optimizing our data pipelines, contributing to both our financial prosperity and operational efficiency.
+
+''')
+
 st.text("")
 st.code(''' 
 ● Scholar Trainee
